@@ -15,8 +15,7 @@ The variable reuse indicates the mode of this functions
 
 """
 
-import tensorflow.compat.v1 as tf
-tf.disable_v2_behavior()
+import tensorflow as tf
 import numpy as np
 
 def loglik_real(batch_data,list_type,theta,normalization_params,tau2,kernel_initializer,name,reuse):
@@ -154,6 +153,6 @@ def loglik_count(batch_data,list_type,theta,normalization_params,tau2,kernel_ini
     output['log_p_x'] = tf.multiply(log_p_x, missing_mask)
     output['log_p_x_missing'] = tf.multiply(log_p_x, 1.0-missing_mask)
     output['params'] = est_lambda
-    output['samples'] = tf.distributions.Poisson(est_lambda).sample()
+    output['samples'] = tf.contrib.distributions.Poisson(est_lambda).sample()
         
     return output
