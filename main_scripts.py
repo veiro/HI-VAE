@@ -8,7 +8,9 @@ Created on Tue Jan 23 15:49:42 2018
 
 import sys
 import argparse
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import graph_new
 import parser_arguments
 import time
