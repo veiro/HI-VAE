@@ -1,5 +1,6 @@
 # HI-VAE
 Este repositorio es una actualizacion de https://github.com/probabilistic-learning/HI-VAE
+
 El informe del analisis del articulo esta en https://github.com/veiro/HI-VAE/blob/master/Informe%20de%20analisis%20de%20articulo%20-%20Andres%20Veiro.pdf
 
 -------------------------------------------------
